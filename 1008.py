@@ -1,0 +1,5 @@
+num=int(input())
+horas=int(input())
+vlrHr=float(input())
+print(f'NUMBER = {num}')
+print(f'SALARY = U$ {(horas*vlrHr):.2f}')
