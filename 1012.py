@@ -1,0 +1,6 @@
+r=input().split()
+print(f'TRIANGULO: {((float(r[0])*float(r[2]))/2):.3f}')
+print(f'CIRCULO: {(3.14159*(float(r[2])**2)):.3f}')
+print(f'TRAPEZIO: {((float(r[0])+float(r[1]))*float(r[2]))/2:.3f}')
+print(f'QUADRADO: {float(r[1])*float(r[1]):.3f}')
+print(f'RETANGULO: {float(r[0])*float(r[1]):.3f}')
