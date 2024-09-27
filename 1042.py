@@ -1,0 +1,13 @@
+v = input().split()
+x = []
+x.append(int(v[0]))
+x.append(int(v[1]))
+x.append(int(v[2]))
+x.sort()
+print(x[0])
+print(x[1])
+print(x[2])
+print(f"")
+print(int(v[0]))
+print(int(v[1]))
+print(int(v[2]))
