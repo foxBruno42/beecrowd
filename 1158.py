@@ -9,19 +9,16 @@ Saída
 
 Imprima a soma dos consecutivos números ímpares a partir do valor X.
 """
+qtd = int(input())
+for passo in range(qtd):
+	a,b = map(int,input().split())
+	tt = 0
 
-#qtd = int(input())
-#for passo in range(qtd):
-#	num = input().split()
-#	a = int(num[0])
-#	b = int(num[1])
-#	tt = 0
-#	if(a > b):
-#		aux = a
-#		a = b
-#		b = aux
-#	a+=1
-#	for x in range(a,b):
-#		if(not(x%2==0)):
-#			tt+=x
-#	print(f"{tt}")
+	if(a%2==0):
+		a+=1
+
+	for i in range(b):
+		tt+=a
+		a+=2
+
+	print(f"{tt}")
