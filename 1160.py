@@ -12,10 +12,22 @@ Saída
 Imprima, para cada caso de teste, quantos anos levará para que a cidade A ultrapasse a cidade B em número de habitantes. Obs.: se o tempo for mais do que 100 anos o programa deve apresentar a mensagem: Mais de 1 seculo. Neste caso, acredito que seja melhor interromper o programa imediatamente após passar de 100 anos, caso contrário você poderá receber como resposta da submissão deste problema "Time Limit Exceeded".
 """
 import math
-Pa=100
-Pb=150
-tA=1.0
-tB=0
-
-t= math.log(Pa/Pb)/math.log((1+tB)/(1+tA))
-print(math.ceil(t))
+ct=int(input())
+for i in range(ct):
+    Pa,Pb,tA,tB=input().split()
+    Pa=int(Pa)
+    Pb=int(Pb)
+    tA=float(tA)
+    tB=float(tB)
+    anos=0
+    while(Pa<=Pb):
+        Pa+=int(Pa*(tA/100))
+        Pb+=int(Pb*(tB/100))
+        anos+=1
+        if(anos>100):
+            Pa=Pb+1
+        #t= math.log(Pa/Pb)/math.log((1+tB)/(1+tA))
+    if(anos>100):
+        print('Mais de 1 seculo.')
+    else:
+        print(f'{anos} anos.')
