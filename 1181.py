@@ -6,30 +6,6 @@ A primeira linha de entrada contem um número L (0 ≤ L ≤ 11) indicando a lin
 
 Saída
 Imprima o resultado solicitado (a soma ou média), com 1 casa após o ponto decimal.
-
-linha=int(input())
-op=input()
-matriz=[]
-for i in range(3):
-    linha=[]
-    for j in range(3):
-        linha+=[0]
-    matriz+=[linha]
-        #num=float(input())
-        #matriz[i][j]=num
-
-for i in range(3):
-    linha=[]
-    for j in range(3):
-        num=float(input())
-        matriz[i][j]=num
-        
-print(matriz)
-sum=0
-for k in range(3):
-    sum += matriz[linha][k]
-if(op=='S'):
-    print(sum)
 """
 line=int(input())
 op=input()
